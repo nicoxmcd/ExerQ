@@ -27,7 +27,7 @@ As we continue to make updates to the main branch in the project repository, it 
 The web server will be hosted on AWS.
 
 ## Work Distribution
-| Syntax | Description |
+| Role | Member |
 | ----------- | ----------- |
 | Project Manager | Title |
 | Web App Programming | Samhita Chunduru, Linette Santana Encarnacion  |
