@@ -1,0 +1,113 @@
+/* Basic Resets & Body Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Main Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.01rem;
+}
+
+.logo {
+  width: 300px; /* Adjust as desired */
+  height: auto;
+  margin-right: 1rem;
+}
+
+.site-title {
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Controls (Dropdowns + Button) */
+.controls {
+  display: flex;
+  justify-content: center; /* Center the dropdowns horizontally */
+  align-items: flex-start; /* Align items to the top of the white box */
+  gap: 1rem; /* Add spacing between dropdowns */
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make sure it spans the white box */
+  box-sizing: border-box;
+  margin-top: 0.2rem;
+}
+
+
+.dropdown-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.dropdown-group label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-group select {
+  width: 180px;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Search Button - Full Screen */
+#search-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #322f63;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1.4rem; /* Adds spacing to lower the button */
+  display: block; /* Ensures it stays on its own line */
+}
+
+#search-btn:hover {
+  background-color: #4a4784;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .controls {
+    /* Allow wrapping and add bottom padding to make room for the positioned button */
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 3rem;
+  }
+  #search-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    /* Remove any margin that might interfere with centering */
+    margin-left: 0;
+  }
+}

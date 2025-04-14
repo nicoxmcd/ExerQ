@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EXERQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <img src="woman-lunge.png" alt="Woman Lunging" class="logo" />
+      <h1 class="site-title">EXERQ</h1>
+    </header>
+
+    <!-- Form / Controls Section -->
+    <div class="controls">
+      <!-- Muscle Groups -->
+      <div class="dropdown-group">
+        <label for="muscle-groups">MUSCLE GROUPS</label>
+        <select id="muscle-groups" name="muscle-groups">
+          <option value="" disabled selected hidden>Select muscle group</option>
+          <option value="Quads">Quads</option>
+          <option value="Glutes">Glutes</option>
+          <option value="Back">Back</option>
+          <option value="Biceps">Biceps</option>
+          <option value="Cardio">Cardio</option>
+          <option value="Core">Core</option>
+          <option value="Hamstrings">Hamstrings</option>
+          <option value="Chest">Chest</option>
+          <option value="Shoulders">Shoulders</option>
+          <option value="Triceps">Triceps</option>
+          <option value="Arms">Arms</option>
+          <option value="Upper Body">Upper Body</option>
+          <option value="Lower Body">Lower Body</option>
+          <option value="Full Body">Full Body</option>
+        </select>
+      </div>
+
+      <!-- Minutes -->
+      <div class="dropdown-group">
+        <label for="minutes">MINUTES</label>
+        <select id="minutes" name="minutes">
+          <option value="" disabled selected hidden>Select Time</option>
+          <option value="15 min">15</option>
+          <option value="20 min">20</option>
+          <option value="30 min">30</option>
+          <option value="45 min">45</option>
+          <option value="60 min">60</option>
+          <option value="90 min">90</option>
+          <option value="120 min">120 min</option>
+          <option value="180 min">180 min</option>
+        </select>
+      </div>
+
+      <!-- Difficulty -->
+      <div class="dropdown-group">
+        <label for="difficulty">DIFFICULTY</label>
+        <select id="difficulty" name="difficulty">
+          <option value="" disabled selected hidden>Select difficulty</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+          <option value="extra-hard">Extra Hard</option>
+        </select>
+      </div>
+
+      <!-- Search Button -->
+      <button id="search-btn">SEARCH</button>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
